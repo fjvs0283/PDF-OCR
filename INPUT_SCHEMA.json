@@ -1,0 +1,61 @@
+{
+    "title": "PuppeteerCrawler Template",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "pdfUrls": {
+            "title": "PDF URLs",
+            "type": "array",
+            "description": "Array of PDF URLs.",
+            "editor": "stringList",
+            "prefill": [
+                "https://gopro.com/content/dam/help/heroplus/manuals/UM_HEROPlus_ENG_REVA_WEB.pdf"
+            ]
+        },
+        "proxyConfig": {
+            "title": "proxyConfig",
+            "type": "object",
+            "description": "Proxy configuration",
+            "editor": "proxy",
+            "prefill": {
+                "useApifyProxy": true
+            }
+        },
+        "text": {
+            "title": "PDF text",
+            "type": "boolean",
+            "description": "Include PDF text in the results.",
+            "default": true
+        },
+        "numpages": {
+            "title": "Number of Pages",
+            "type": "boolean",
+            "description": "Include number of pages in the results.",
+            "default": false
+        },
+        "numrender": {
+            "title": "Number of Pages Rendered",
+            "type": "boolean",
+            "description": "Include number of pages rendered in the results.",
+            "default": false
+        },
+        "info": {
+            "title": "Info",
+            "type": "boolean",
+            "description": "Include additional info in the results.",
+            "default": false
+        },
+        "metadata": {
+            "title": "Metadata",
+            "type": "boolean",
+            "description": "Include metadata in the results.",
+            "default": false
+        },
+        "version": {
+            "title": "Version",
+            "type": "boolean",
+            "description": "Include version in the results.",
+            "default": false
+        }
+    }
+}
